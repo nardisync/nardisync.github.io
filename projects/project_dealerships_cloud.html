@@ -20,7 +20,7 @@
 
 				<!-- Header -->
 				<header id="header">
-					<a href="../projects/project_cloud_app.html" class="logo">Projects - Dealerships Cloud App</a>
+					<a href="../projects/project_cloud_app.html" class="logo">Project Cloud Dealerships App</a>
 				</header>
 
 				<!-- Nav -->
@@ -45,25 +45,38 @@
                         <section class="post">
                             <header class="major">
                                 <span class="date">July 08, 2022</span>
-                                <h1>Dealerships Cloud App</h1>
-                                Release on the <a href="https://cloud.ibm.com/"><b>IBM Cloud platform</b></a>. This is an app created during one of my course on Coursera. 
-								This app is created with <a href="https://www.djangoproject.com/">Dijango</a> and it is an application that persists, processes and presents data in a 
-								fashion and responsive way, for <br>
+                                <h1>Dealerships <br>Cloud App</h1>
+								Released and Hosted on the <a href="https://cloud.ibm.com/"><b>IBM Cloud platform</b></a>. This is an app created during the last course of my specializzation on Coursera. 
+								This <b>Full-Stack App</b> is created with <a href="https://www.djangoproject.com/">Django</a> and it is an application that persists, processes and presents data 
+								in various forms, using various <b>REST API</b> and <b>Object-Databases</b> hosted in the Cloud.<br><br>
+
 								<b>Source code: </b> <a href="https://github.com/nardisync/CloudAppDevelopment_Capstone">https://github.com/nardisync/CloudAppDevelopment_Capstone</a>
                             </header>
-                            <div class="image main"><img src="../images/index-dealership-cloud-app.JPG" alt="index-dealership-cloud-app" /></div>
-							<div class="image main"><img src="../images/add-review-dealership-cloud-app.JPG" alt="index-dealership-cloud-app" /></div>
-                            <p>
-								This app is the final project that I did during one of my certificate for improve my skill on Full-Stack.
+							<p>
+								This app is the final project that I did during one of my certificate for improve my skill on <b>Full-Stack</b>. It consists in a landing page where are showed all the delearship entries 
+								of an <b>Object-Databases hosted in the Cloud</b> retrived by a script in the backend that comunicate with a <b>REST API</b> for retriving the objects. <br>
+								All the page and the logics of this site are handled by <b>Django framework</b> in the backend. Futhermore, Django is used for handling a database of users and a database of Cars and Car Makers.
+								
                             </p>
+                            <div class="image main"><img src="../images/index-dealership-cloud-app.JPG" alt="index-dealership-cloud-app" /></div>
+							<p>
+								One important feature of this app is that a logged user (there is the possibility to register on the site) can give a review of a dealership. This <b>review</b> is sendend with a POST Request
+								to a <b>Databases</b> hosted in the Cloud and saved there.
+								Futhermore, by accessing this databases we can retrive all the reviews for all the dealerships and, by using a simple <b>NLU service (Natural Language Understanging)</b> hosted on IBM Cloud. 
+								We can analize the sentiment of a review and understanding if the review is positive, negative or neutral.<br>
+								We archive this by using a REST API and a POST Request to the NLU Service hosted in the cloud, wait for the response and analized it.
+							</p>
+							<div class="image main"><img src="../images/add-review-dealership-cloud-app.JPG" alt="index-dealership-cloud-app" /></div>
+
 							<h2>Some Feature</h2>
 							<p>
 								<ul>
 									<li>It is possibile to Login as a new user thanks to the Django Login sistem.</li>
-									<li>Allow an user to take an exame on one, or more, of the Course displayed.</li>
-									<li>It gives feedback on you answer after the text is finished.</li>
-									<li>Allow an Admin to add more course or to modify the course created.</li>
-									<li>It is running on IBM Cloud.</li>
+									<li>Allow an user to add a review to a Dealerships.</li>
+									<li>It show all the revies for each dealership.</li>
+									<li>Each review is analized by a NLU service</li>
+									<li>Allow an Admin to add more Cars and Car Makers to the system.</li>
+									<li>It is hosted on the Cloud.</li>
 								</ul>
 							</p>
 							<a href="https://github.com/nardisync/CloudAppDevelopment_Capstone" class="button primary fit" target="_blank"> GitHub Repository</a>
